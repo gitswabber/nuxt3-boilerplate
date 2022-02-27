@@ -1,7 +1,12 @@
 <template>
   <div>
-    This is default layout!!!
-    <slot />
+    <v-app>
+    <v-main>
+      [layout header]
+      <slot/>
+      [layout footer]
+    </v-main>
+    </v-app>
   </div>
 </template>
 
