@@ -9,6 +9,8 @@
         </v-card>
       </v-container>
     </v-container>
+    <br>
+    <v-btn color="primary" to="/">Go to index</v-btn>
   </div>
 </template>
 

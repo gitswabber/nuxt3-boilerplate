@@ -1,47 +1,75 @@
 <template>
   <div>
-    <br>
-    <NuxtLink to="/about">Go to about</NuxtLink>
-    <br>
-    <NuxtLink to="/todos">Go to todos</NuxtLink>
+    <v-app>
+      <v-main>
+        Hello Nuxt World!
+        <div class="ma-3">
+          <div>This is event & vuetify test. Counter: {{ counter }}</div>
+          <div>
+            <v-btn color="primary" class="font-mono" @click="inclement">
+              +
+            </v-btn>
+            <v-btn color="error" class="font-mono" @click="counter--">
+              -
+            </v-btn>
+          </div>
+        </div>
+        <div class="ma-5">
+          <div>This is router test.</div>
+          <NuxtLink to="/about">Go to about</NuxtLink>
+          <br>
+          <NuxtLink to="/todos">Go to todos</NuxtLink>
+        </div>
+      </v-main>
+    </v-app>
   </div>
 </template>
 
-<script>
-export default {
-  name: "index"
+<script setup>
+// Composition API
+import { ref, onMounted } from 'vue'
+
+const el = ref()
+
+onMounted(() => {
+  console.log('on mounted')
+  el.value // <div>
+})
+const counter = useState('counter', () => Math.round(Math.random() * 1000))
+
+function inclement() {
+  counter.value++
 }
+
 definePageMeta({
   layout: false
 });
 </script>
 
-<style lang="scss">
-/*%main-display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#app {
-  @extend %main-display;
-  flex-direction: column;
-}
-body {
-  @extend %main-display;
-  margin: 0;
-}
-nav {
-  @extend %main-display;
-  background-color: black;
-  width: 100vw;
-  & > a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    margin: 10px;
-    &:hover {
-      color: darken(white, 30%);
+
+<!--<script>
+// Options API
+export default {
+  name: "index",
+  data() {
+    return {
+      counter: Math.round(Math.random() * 1000)
     }
+  },
+  methods: {
+    inclement() {
+      this.counter++
+    }
+  },
+  mounted() {
+    console.log('mounted!')
   }
-}*/
+}
+definePageMeta({
+  layout: false
+});
+</script>-->
+
+<style scoped>
+
 </style>

@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<!--<script>
 // This will also work in `<script setup>`
 definePageMeta({
   // layout: "custom",
@@ -18,4 +18,4 @@ definePageMeta({
 </script>
 
 <style scoped>
-</style>
+</style>-->

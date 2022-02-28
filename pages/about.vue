@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-btn color="primary" to="/">hello</v-btn>
-    <v-btn color="primary" @click="click">hello2</v-btn>
-    This is about!
+    <v-btn color="primary" to="/">Go to index</v-btn>
+    <br>
+    <v-btn color="primary" @click="click">Print console</v-btn>
   </div>
 </template>
 
