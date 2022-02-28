@@ -1,4 +1,4 @@
-import { defineNuxtPlugin } from "#app";
+import { defineNuxtPlugin } from '#app'
 import { createVuetify } from 'vuetify'
 import * as Components from 'vuetify/components'
 
