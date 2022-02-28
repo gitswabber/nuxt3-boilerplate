@@ -9,6 +9,9 @@
     "nuxt3": "latest"
   },
   "dependencies": {
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@pinia/nuxt": "^0.1.8",
+    "pinia": "^2.0.11",
     "sass": "^1.49.9",
     "vuetify": "^3.0.0-alpha.13"
   }
