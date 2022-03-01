@@ -3,6 +3,8 @@
     <v-app>
       <v-main>
         Hello Nuxt World!
+        <br>
+        Current config : {{ config }}
         <div class="ma-3">
           <div>This is event & vuetify test. Counter: {{ counter }}</div>
           <div>
@@ -29,6 +31,8 @@
 // Composition API
 import { ref, onMounted } from 'vue'
 
+const config = useRuntimeConfig()
+
 const el = ref()
 
 onMounted(() => {
@@ -46,14 +50,14 @@ definePageMeta({
 });
 </script>
 
-
 <!--<script>
 // Options API
 export default {
   name: "index",
   data() {
     return {
-      counter: Math.round(Math.random() * 1000)
+      counter: Math.round(Math.random() * 1000),
+      config: useRuntimeConfig()
     }
   },
   methods: {

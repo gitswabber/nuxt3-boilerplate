@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
+    "local": "sh ./execution/local.sh",
+    "dev": "sh ./execution/dev.sh",
+    "prod": "sh ./execution/prod.sh",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs"
   },
