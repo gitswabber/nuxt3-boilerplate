@@ -27,3 +27,12 @@ yarn build
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+
+## References
+
+* [Nuxt3 Modules support status](https://github.com/nuxt/framework/discussions/751)
+* [Vuetify3 releases](https://github.com/vuetifyjs/vuetify/releases)
+
+## Single File Component
+
+* [Advantages over the nomal syntax](https://vuejs.org/api/sfc-script-setup.html#basic-syntax)

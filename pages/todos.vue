@@ -1,7 +1,7 @@
 <template>
   <div class="todos">
     <v-container fluid>
-      <h4>투두 리스트</h4>
+      <h4>TODO List</h4>
       <v-container class="todo-section">
         <v-card v-for="todo in todos" :key="todo" class="ma-3">
           <v-card-title>{{ todo.title }}</v-card-title>
@@ -9,8 +9,6 @@
         </v-card>
       </v-container>
     </v-container>
-    <br>
-    <v-btn color="primary" to="/">Go to index</v-btn>
   </div>
 </template>
 

@@ -7,11 +7,15 @@ export default defineNuxtConfig({
     build: {
         transpile: ['vuetify']
     },
+    buildModules: [
+        '@pinia/nuxt',
+    ],
     vite: {
         define: {
             'process.env.DEBUG': 'false',
         }
     },
+    ssr: false,
     publicRuntimeConfig: {
         env: process.env.ENV,
         api: process.env.API,

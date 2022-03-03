@@ -2,7 +2,7 @@
   <div>
     <v-app>
       <v-main>
-        Hello Nuxt World!
+        {{ greetings }}
         <br>
         Current config : {{ config }}
         <div class="ma-3">
@@ -20,18 +20,24 @@
           <div>This is router test.</div>
           <NuxtLink to="/about">Go to about</NuxtLink>
           <br>
+          <NuxtLink to="/teams-DevOpsPlatform/jessie">Go to dynamic route</NuxtLink>
+          <br>
           <NuxtLink to="/todos">Go to todos</NuxtLink>
+          <br>
+          <NuxtLink to="/users">Go to users</NuxtLink>
         </div>
       </v-main>
     </v-app>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // Composition API
-import { ref, onMounted } from 'vue'
+import {ref, onMounted} from 'vue'
+import {useGreetings} from "../composables/status";
 
 const config = useRuntimeConfig()
+const greetings = useGreetings()
 
 const el = ref()
 

@@ -1,18 +1,26 @@
 <template>
   <div>
-    <v-btn color="primary" to="/">Go to index</v-btn>
+    {{ greetings }}
     <br>
     <v-btn color="primary" @click="click">Print console</v-btn>
   </div>
 </template>
 
 <script>
+import {useGreetings} from "../composables/status";
+
 export default {
-name: "about",
+  name: "about",
+  data() {
+    return {
+      greetings: useGreetings()
+    }
+  },
   methods: {
-  click() {
-    console.log('click')
-  }
+    click() {
+      console.log('click')
+      this.greetings = this.greetings + '!!'
+    }
   }
 }
 </script>
