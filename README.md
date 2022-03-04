@@ -32,6 +32,7 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
 
 * [Nuxt3 Modules support status](https://github.com/nuxt/framework/discussions/751)
 * [Vuetify3 releases](https://github.com/vuetifyjs/vuetify/releases)
+* [Axios support in Nuxt3](https://github.com/nuxt-community/axios-module/issues/536)
 
 ## Single File Component
 
