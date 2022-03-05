@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     publicRuntimeConfig: {
         env: process.env.ENV,
         api: process.env.API,
-        description: 'this is nuxt app.'
+        description: 'This is nuxt app.'
     },
     privateRuntimeConfig: {
         token: process.env.TOKEN
