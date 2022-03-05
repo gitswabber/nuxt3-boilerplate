@@ -3,7 +3,10 @@ import {defineNuxtConfig} from 'nuxt3'
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
     // https://github.com/nuxt/framework/discussions/1183
-    css: ['vuetify/lib/styles/main.sass'],
+    css: [
+        'vuetify/lib/styles/main.sass',
+        '@mdi/font/css/materialdesignicons.min.css'
+    ],
     build: {
         transpile: ['vuetify']
     },
