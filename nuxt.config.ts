@@ -8,14 +8,21 @@ export default defineNuxtConfig({
         transpile: ['vuetify']
     },
     ssr: false,
-    buildModules: [
-        '@pinia/nuxt',
-    ],
     vite: {
         define: {
             'process.env.DEBUG': 'false',
         }
     },
+
+    buildModules: [
+        '@pinia/nuxt',
+    ],
+
+    modules: [
+        // https://github.com/nuxt-community/axios-module/issues/536
+        ['@nuxtjs/axios', {proxyHeaders: false}],
+    ],
+
     publicRuntimeConfig: {
         env: process.env.ENV,
         api: process.env.API,

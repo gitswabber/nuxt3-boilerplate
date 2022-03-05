@@ -2,7 +2,7 @@
 
 # set environment variables
 export ENV=LOCAL
-export API=http://local.com
+export API=http://localhost:8080
 export TOKEN=LOCAL_TOKEN
 
 # run
