@@ -5,9 +5,9 @@
     Change user and then refresh this page!
     <br>
     <br>
-    You are : {{ userStore.id }}
+    You are : <b>{{ userStore.id }}</b>
     <br>
-    Are you admin? : {{ userStore.isAdmin }}
+    Are you admin? : <b>{{ userStore.isAdmin === true ? 'Yes, I am.' : 'No, I am not.' }}</b>
     <div class="ma-5"></div>
     <div style="width: 500px">
       <v-text-field placeholder="User id" v-model="name"></v-text-field>
