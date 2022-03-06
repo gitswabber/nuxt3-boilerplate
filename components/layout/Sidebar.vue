@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import {useShowSideBar} from "../../composables/status";
+import {useShowSideBar} from "~/composables/status";
 const showSide = useShowSideBar()
 
 const router = useRouter()
@@ -40,9 +40,9 @@ const router = useRouter()
 const menu = useState('menu', () =>
     [
       ['mdi-inbox-arrow-down', 'home', '/home'],
-      ['mdi-send', 'dynamic page', '/dynamic-group/1'],
+      ['mdi-send', 'page route', '/groups-test/1'],
       ['mdi-delete', 'store', '/store'],
-      ['mdi-alert-octagon', 'api', '/api'],
+      ['mdi-alert-octagon', 'todos', '/todos'],
     ]
 )
 

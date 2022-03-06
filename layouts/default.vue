@@ -7,7 +7,7 @@
       <LayoutSidebar></LayoutSidebar>
 
       <v-main>
-        <div class="ma-5" style="text-align: center">
+        <div class="main ma-5">
           <slot/>
         </div>
       </v-main>
@@ -15,3 +15,9 @@
     </v-app>
   </div>
 </template>
+
+<style>
+.main {
+  /*text-align: center;*/
+}
+</style>
