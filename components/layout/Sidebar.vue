@@ -26,7 +26,6 @@
           </div>
         </v-list-item>
       </v-list>
-      <NuxtLink to="/">Go to login</NuxtLink>
     </v-navigation-drawer>
   </div>
 </template>
