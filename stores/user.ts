@@ -3,17 +3,21 @@ import {defineStore} from 'pinia'
 export const useUserStore = defineStore('user', {
     state: () => ({
         id: 'tester',
-        isAdmin: false
+        admin: false
     }),
     getters: {
         getId: (state) => {
             return state.id
+        },
+        isAdmin: (state) => {
+            return state.admin
         }
     },
     actions: {
         changeUser(id) {
             this.id = id
-            console.log('User is changed. : ' + id)
+            this.admin = (id === 'admin')
         }
-    }
+    },
+    persist: true
 })

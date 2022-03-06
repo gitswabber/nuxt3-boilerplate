@@ -16,6 +16,7 @@
     "@pinia/nuxt": "^0.1.8",
     "nuxt3": "latest",
     "pinia": "^2.0.11",
+    "pinia-plugin-persistedstate": "^1.4.0",
     "sass": "^1.49.9",
     "vuetify": "^3.0.0-alpha.13"
   }
