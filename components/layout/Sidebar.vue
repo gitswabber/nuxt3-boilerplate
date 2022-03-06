@@ -4,6 +4,7 @@
         v-model="showSide"
         app
     >
+      <!-- todo grouping -->
       <v-list>
         <v-list-item
             v-for="[icon, text, to] in menu"
@@ -11,7 +12,7 @@
             link
         >
           <v-list-item-icon>
-            <v-icon>{{ icon }}</v-icon>
+            <v-icon size="small">{{ icon }}</v-icon>
           </v-list-item-icon>
 
           <div style="padding-right: 10px"></div>
@@ -39,9 +40,9 @@ const router = useRouter()
 const menu = useState('menu', () =>
     [
       ['mdi-inbox-arrow-down', 'home', '/home'],
-      ['mdi-send', 'dynamic page', '/dynamic'],
+      ['mdi-send', 'dynamic page', '/dynamic-group/1'],
       ['mdi-delete', 'store', '/store'],
-      ['mdi-alert-octagon', 'api', 'api'],
+      ['mdi-alert-octagon', 'api', '/api'],
     ]
 )
 
