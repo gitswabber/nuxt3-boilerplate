@@ -35,7 +35,7 @@
 const {data} = await useAsyncData('getTodos', () => $fetch('/api/todos/getTodos'))
 const todos = useState('todos', () => [])
 const title = useState('title', () => '')
-import TodoApi from "~/server/api/todo-apis";
+import TodoApi from "../server/api/todo-apis";
 
 onMounted(() => {
   todos.value = data.value
