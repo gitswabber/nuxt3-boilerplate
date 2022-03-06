@@ -36,4 +36,5 @@ Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
 
 ## Single File Component
 
-* [Advantages over the nomal syntax](https://vuejs.org/api/sfc-script-setup.html#basic-syntax)
+* [Advantages of \<script setup\> over the normal syntax](https://vuejs.org/api/sfc-script-setup.html)
+* [Composition API FAQ](https://vuejs.org/guide/extras/composition-api-faq.html)
