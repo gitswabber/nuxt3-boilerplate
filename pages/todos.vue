@@ -19,7 +19,7 @@
             <v-card-title>{{ todo.title }}</v-card-title>
             <v-card-text>created by {{ todo.by }}</v-card-text>
             <v-card-actions>
-              <v-btn color="info" class="font-mono" @click="deleteTodo(todo.no)">DELETE</v-btn>
+              <v-btn color="success" class="font-mono" @click="deleteTodo(todo.no)">DELETE</v-btn>
             </v-card-actions>
           </v-card>
           <div>

@@ -38,10 +38,10 @@ const router = useRouter()
 
 const menu = useState('menu', () =>
     [
-      ['mdi-inbox-arrow-down', 'home', '/home'],
-      ['mdi-send', 'page route', '/groups-test/1'],
-      ['mdi-delete', 'store', '/store'],
-      ['mdi-alert-octagon', 'todos', '/todos'],
+      ['mdi-home', 'home', '/home'],
+      ['mdi-call-split', 'page route', '/groups-test/1'],
+      ['mdi-database', 'store', '/store'],
+      ['mdi-format-list-checks', 'todos', '/todos'],
     ]
 )
 

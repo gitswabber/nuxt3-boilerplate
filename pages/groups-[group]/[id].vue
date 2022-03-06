@@ -5,6 +5,12 @@
     Change the url of groups-{GROUP}/{ID} and see what's going on.
     <br>
     <br>
-    You are in '{{ $route.params.id }}' page of '{{ $route.params.group }}' group now.
+    You are in <span class="emphasize">{{ $route.params.id }}</span> of <span class="emphasize">{{ $route.params.group }}</span> page now.
   </div>
 </template>
+
+<style scoped>
+.emphasize {
+  color: coral;
+}
+</style>
